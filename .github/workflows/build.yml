@@ -5,6 +5,7 @@ on:
     branches: [ main ]
   schedule:
     - cron: '0 8 1 * *' # The 1st every month at 8:00
+  workflow_dispatch:
 
 env:
   VERSION: latest
