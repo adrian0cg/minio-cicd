@@ -39,7 +39,7 @@ jobs:
           context: .
           push: true
           tags: |
-            ghcr.io/cparta/minio-cicd:latest 
-            ghcr.io/cparta/minio-cicd:${{ env.VERSION }}
+            ghcr.io/${{ github.repository_owner }}/minio-cicd:latest 
+            ghcr.io/${{ github.repository_owner }}/minio-cicd:${{ env.VERSION }}
           build-args: |
             VERSION=${{ env.VERSION }}
